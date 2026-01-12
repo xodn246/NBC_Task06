@@ -5,8 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/xodn2/Desktop/NBC/Task/Task06/NBC_Task06/Task06/Content/Level/M_MainLevel.umap",
-				"C:/Users/xodn2/Desktop/NBC/Task/Task06/NBC_Task06/Task06/Content/Map/M_MainLevel.umap"
+				"C:/Users/xodn2/Desktop/NBC/Task/Task06/NBC_Task06/Task06/Content/Map/M_MainLevel.umap",
+				"C:/Users/xodn2/Desktop/NBC/Task/Task06/NBC_Task06/Task06/Content/BluePrint/NewBlueprint.uasset",
+				"C:/Users/xodn2/Desktop/NBC/Task/Task06/NBC_Task06/Task06/Content/Level/M_MainLevel.umap"
 			]
 		}
 	]
