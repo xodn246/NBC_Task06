@@ -29,6 +29,13 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MoveActor|Property")
 	float MaxRange;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MoveActor|Property")
+	bool IsMove = true;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "MoveActor|Property")
+	float moveTime;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "MoveActor|Property")
+	float stopTime;
+
 	
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
@@ -36,4 +43,9 @@ protected:
 	void Move(float deltatime);
 	float GetMoveDistance() const;
 	void Flip();
+	void ToggleMove();
+	void ToggleStop();
+
+private:
+	FTimerHandle MoveToggleTimeHandle;
 };

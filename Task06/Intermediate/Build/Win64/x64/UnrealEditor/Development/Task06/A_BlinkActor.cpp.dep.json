@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\xodn2\\desktop\\nbc\\task\\task06\\nbc_task06\\task06\\source\\task06\\private\\a_blinkactor.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\xodn2\\desktop\\nbc\\task\\task06\\nbc_task06\\task06\\intermediate\\build\\win64\\x64\\task06editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\xodn2\\desktop\\nbc\\task\\task06\\nbc_task06\\task06\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\task06\\definitions.task06.h",
+            "c:\\users\\xodn2\\desktop\\nbc\\task\\task06\\nbc_task06\\task06\\source\\task06\\public\\a_blinkactor.h",
+            "d:\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "d:\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "d:\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "d:\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h",
+            "c:\\users\\xodn2\\desktop\\nbc\\task\\task06\\nbc_task06\\task06\\intermediate\\build\\win64\\unrealeditor\\inc\\task06\\uht\\a_blinkactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -57,12 +57,28 @@ struct Z_Construct_UClass_AA_MoveActor_Statics
 		{ "Category", "MoveActor|Property" },
 		{ "ModuleRelativePath", "Public/A_MoveActor.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IsMove_MetaData[] = {
+		{ "Category", "MoveActor|Property" },
+		{ "ModuleRelativePath", "Public/A_MoveActor.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_moveTime_MetaData[] = {
+		{ "Category", "MoveActor|Property" },
+		{ "ModuleRelativePath", "Public/A_MoveActor.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_stopTime_MetaData[] = {
+		{ "Category", "MoveActor|Property" },
+		{ "ModuleRelativePath", "Public/A_MoveActor.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SceneRoot;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MeshComp;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MoveDir;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MoveSpeed;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxRange;
+	static void NewProp_IsMove_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsMove;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_moveTime;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_stopTime;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -75,12 +91,22 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AA_MoveActor_S
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AA_MoveActor_Statics::NewProp_MoveDir = { "MoveDir", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AA_MoveActor, MoveDir), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveDir_MetaData), NewProp_MoveDir_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AA_MoveActor_Statics::NewProp_MoveSpeed = { "MoveSpeed", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AA_MoveActor, MoveSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveSpeed_MetaData), NewProp_MoveSpeed_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AA_MoveActor_Statics::NewProp_MaxRange = { "MaxRange", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AA_MoveActor, MaxRange), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxRange_MetaData), NewProp_MaxRange_MetaData) };
+void Z_Construct_UClass_AA_MoveActor_Statics::NewProp_IsMove_SetBit(void* Obj)
+{
+	((AA_MoveActor*)Obj)->IsMove = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AA_MoveActor_Statics::NewProp_IsMove = { "IsMove", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AA_MoveActor), &Z_Construct_UClass_AA_MoveActor_Statics::NewProp_IsMove_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IsMove_MetaData), NewProp_IsMove_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AA_MoveActor_Statics::NewProp_moveTime = { "moveTime", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AA_MoveActor, moveTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_moveTime_MetaData), NewProp_moveTime_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AA_MoveActor_Statics::NewProp_stopTime = { "stopTime", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AA_MoveActor, stopTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_stopTime_MetaData), NewProp_stopTime_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AA_MoveActor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AA_MoveActor_Statics::NewProp_SceneRoot,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AA_MoveActor_Statics::NewProp_MeshComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AA_MoveActor_Statics::NewProp_MoveDir,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AA_MoveActor_Statics::NewProp_MoveSpeed,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AA_MoveActor_Statics::NewProp_MaxRange,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AA_MoveActor_Statics::NewProp_IsMove,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AA_MoveActor_Statics::NewProp_moveTime,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AA_MoveActor_Statics::NewProp_stopTime,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AA_MoveActor_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AA_MoveActor_Statics::DependentSingletons[])() = {
@@ -123,10 +149,10 @@ AA_MoveActor::~AA_MoveActor() {}
 struct Z_CompiledInDeferFile_FID_Task06_Source_Task06_Public_A_MoveActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AA_MoveActor, AA_MoveActor::StaticClass, TEXT("AA_MoveActor"), &Z_Registration_Info_UClass_AA_MoveActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AA_MoveActor), 2768651773U) },
+		{ Z_Construct_UClass_AA_MoveActor, AA_MoveActor::StaticClass, TEXT("AA_MoveActor"), &Z_Registration_Info_UClass_AA_MoveActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AA_MoveActor), 2409055245U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Task06_Source_Task06_Public_A_MoveActor_h_2245886254(TEXT("/Script/Task06"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Task06_Source_Task06_Public_A_MoveActor_h_2876380680(TEXT("/Script/Task06"),
 	Z_CompiledInDeferFile_FID_Task06_Source_Task06_Public_A_MoveActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Task06_Source_Task06_Public_A_MoveActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

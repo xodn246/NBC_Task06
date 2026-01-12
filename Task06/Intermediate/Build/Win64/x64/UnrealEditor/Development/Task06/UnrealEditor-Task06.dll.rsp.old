@@ -38,10 +38,12 @@
 /NOIMPLIB
 "C:\Users\xodn2\Desktop\NBC\Task\Task06\NBC_Task06\Task06\Intermediate\Build\Win64\x64\Task06Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
 "C:\Users\xodn2\Desktop\NBC\Task\Task06\NBC_Task06\Task06\Intermediate\Build\Win64\x64\UnrealEditor\Development\Task06\A_MoveActor.gen.cpp.obj"
+"C:\Users\xodn2\Desktop\NBC\Task\Task06\NBC_Task06\Task06\Intermediate\Build\Win64\x64\UnrealEditor\Development\Task06\A_RotationActor.gen.cpp.obj"
 "C:\Users\xodn2\Desktop\NBC\Task\Task06\NBC_Task06\Task06\Intermediate\Build\Win64\x64\UnrealEditor\Development\Task06\Task06.init.gen.cpp.obj"
 "C:\Users\xodn2\Desktop\NBC\Task\Task06\NBC_Task06\Task06\Intermediate\Build\Win64\x64\UnrealEditor\Development\Task06\Task06.cpp.obj"
-"C:\Users\xodn2\Desktop\NBC\Task\Task06\NBC_Task06\Task06\Intermediate\Build\Win64\x64\UnrealEditor\Development\Task06\A_MoveActor.cpp.obj"
+"C:\Users\xodn2\Desktop\NBC\Task\Task06\NBC_Task06\Task06\Intermediate\Build\Win64\x64\UnrealEditor\Development\Task06\A_RotationActor.cpp.obj"
 "C:\Users\xodn2\Desktop\NBC\Task\Task06\NBC_Task06\Task06\Intermediate\Build\Win64\x64\UnrealEditor\Development\Task06\PerModuleInline.gen.cpp.obj"
+"C:\Users\xodn2\Desktop\NBC\Task\Task06\NBC_Task06\Task06\Intermediate\Build\Win64\x64\UnrealEditor\Development\Task06\A_MoveActor.cpp.obj"
 "C:\Users\xodn2\Desktop\NBC\Task\Task06\NBC_Task06\Task06\Intermediate\Build\Win64\x64\UnrealEditor\Development\Task06\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Core\UnrealEditor-Core.lib"

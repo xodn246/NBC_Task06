@@ -12,6 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\UpgradeLog.htm" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -42,6 +43,9 @@
     <Filter Include="Source\Task06\Private">
       <UniqueIdentifier>{770FA8F7-291A-3416-A5DC-F38CEB491006}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Task06\Private\A_BlinkActor.cpp">
+      <Filter>Source\Task06\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Task06\Private\A_MoveActor.cpp">
       <Filter>Source\Task06\Private</Filter>
     </ClCompile>
@@ -51,6 +55,9 @@
     <Filter Include="Source\Task06\Public">
       <UniqueIdentifier>{FB51DC90-56D2-3FDD-8E1E-62720E6F1B97}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Task06\Public\A_BlinkActor.h">
+      <Filter>Source\Task06\Public</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Task06\Public\A_MoveActor.h">
       <Filter>Source\Task06\Public</Filter>
     </ClCompile>
