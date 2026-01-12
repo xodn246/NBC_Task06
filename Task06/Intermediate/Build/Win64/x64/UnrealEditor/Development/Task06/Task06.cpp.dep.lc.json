@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\xodn2\\desktop\\nbc\\task\\task06\\nbc_task06\\task06\\source\\task06\\task06.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\xodn2\\desktop\\nbc\\task\\task06\\nbc_task06\\task06\\intermediate\\build\\win64\\x64\\task06editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\xodn2\\desktop\\nbc\\task\\task06\\nbc_task06\\task06\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\task06\\definitions.task06.h",
+            "c:\\users\\xodn2\\desktop\\nbc\\task\\task06\\nbc_task06\\task06\\source\\task06\\task06.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
