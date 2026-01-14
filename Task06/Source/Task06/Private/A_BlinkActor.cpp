@@ -19,9 +19,16 @@ void AA_BlinkActor::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	IsBlink = false;
-	GetWorldTimerManager().SetTimer(BlinkToggleTimeHandle, this, &AA_BlinkActor::ToggleVisible, StartDelay, false);
-
+	if (StartDelay > 0)
+	{
+		IsBlink = false;
+		SetPlatformActive(IsBlink);
+		GetWorldTimerManager().SetTimer(BlinkToggleTimeHandle, this, &AA_BlinkActor::ToggleVisible, StartDelay, false);
+	}
+	else
+	{
+		ToggleVisible();
+	}
 }
 
 void AA_BlinkActor::Tick(float DeltaTime)
