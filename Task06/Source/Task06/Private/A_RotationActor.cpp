@@ -22,6 +22,11 @@ void AA_RotationActor::BeginPlay()
 	Super::BeginPlay();
 
 	CurrentRotate = GetActorQuat();
+	
+	if (RandomActor)
+	{
+		SetRandomParameters();
+	}
 }
 
 // Called every frame
@@ -31,7 +36,8 @@ void AA_RotationActor::Tick(float DeltaTime)
 	Rotate(DeltaTime);
 }
 
-void  AA_RotationActor::Rotate(float deltaTime) {
+void  AA_RotationActor::Rotate(float deltaTime) 
+{
 	FQuat deltaQuat = FQuat::Identity;
 
 	if (ActiveRoll) {
@@ -48,4 +54,15 @@ void  AA_RotationActor::Rotate(float deltaTime) {
 	CurrentRotate.Normalize();
 
 	SetActorRotation(CurrentRotate);
+}
+
+void AA_RotationActor::SetRandomParameters() 
+{
+	ActiveRoll = FMath::RandBool();
+	ActivePitch = FMath::RandBool();
+	ActiveYaw = FMath::RandBool();
+
+	RollSpeed = FMath::RandRange(Random_MinSpeed, Random_MaxSpeed);
+	PitchSpeed = FMath::RandRange(Random_MinSpeed, Random_MaxSpeed);
+	YawSpeed = FMath::RandRange(Random_MinSpeed, Random_MaxSpeed);
 }

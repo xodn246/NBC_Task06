@@ -22,6 +22,13 @@ protected:
 	UStaticMeshComponent* MeshComp;
 	FQuat CurrentRotate;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RotateActor|Property|Random")
+	bool RandomActor = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RotateActor|Property|Random")
+	float Random_MaxSpeed = 2000.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RotateActor|Property|Random")
+	float Random_MinSpeed = 500.0f;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RotateActor|Property")
 	bool ActiveRoll;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RotateActor|Property")
@@ -41,4 +48,5 @@ protected:
 	virtual void Tick(float DeltaTime) override;
 
 	void Rotate(float deltaTime);
+	void SetRandomParameters();
 };

@@ -52,6 +52,9 @@
     <ClCompile Include="..\..\Source\Task06\Private\A_RotationActor.cpp">
       <Filter>Source\Task06\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Task06\Private\A_Spawner.cpp">
+      <Filter>Source\Task06\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\Task06\Public">
       <UniqueIdentifier>{FB51DC90-56D2-3FDD-8E1E-62720E6F1B97}</UniqueIdentifier>
     </Filter>
@@ -62,6 +65,9 @@
       <Filter>Source\Task06\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Task06\Public\A_RotationActor.h">
+      <Filter>Source\Task06\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task06\Public\A_Spawner.h">
       <Filter>Source\Task06\Public</Filter>
     </ClCompile>
   </ItemGroup>

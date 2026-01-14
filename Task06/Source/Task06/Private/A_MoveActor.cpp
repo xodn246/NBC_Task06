@@ -22,6 +22,14 @@ void AA_MoveActor::BeginPlay()
 	Super::BeginPlay();
 
 	InitLocate = GetActorLocation();
+
+	if (RandomActor)
+	{
+		SetRandomParameters();
+	}
+
+	MoveDir = MoveDir.GetSafeNormal();
+
 	ToggleMove();
 }
 
@@ -38,7 +46,6 @@ void AA_MoveActor::Tick(float DeltaTime)
 
 void AA_MoveActor::Move(float deltaTime) 
 {
-	FVector normalDir = MoveDir.GetSafeNormal();
 	FVector NewLocation = GetActorLocation() + MoveDir * MoveSpeed * deltaTime;
 
 	SetActorLocation(NewLocation);
@@ -72,4 +79,12 @@ void AA_MoveActor::ToggleStop()
 	IsMove = false;
 	GetWorldTimerManager().SetTimer(MoveToggleTimeHandle, this, &AA_MoveActor::ToggleMove, stopTime, false);
 
+}
+
+void AA_MoveActor::SetRandomParameters() {
+	MoveDir = FMath::VRand();
+	MoveSpeed = FMath::RandRange(Random_MinSpeed, Random_MaxSpeed);
+	MaxRange = FMath::RandRange(Random_MinRange, Random_MaxRange);
+	moveTime = FMath::RandRange(Random_MinMoveTime, Random_MaxMoveTime);
+	stopTime = FMath::RandRange(Random_MinStopTime, Random_MaxStopTime);
 }
